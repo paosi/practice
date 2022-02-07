@@ -134,3 +134,15 @@ def listc11():
     return nums
 
 print(listc11())
+
+
+# Fibonacci Sequence
+def listc12():
+
+    limit = 1000
+    nums = [1, 2]
+    [nums.append(nums[-1] + nums[-2]) for i in range(limit) if nums[-1] < limit]
+
+    return nums[:-1]
+
+print(listc12())
